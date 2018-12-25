@@ -1,0 +1,25 @@
+{
+  "name": "warframeprimemanager",
+  "version": "1.0.0",
+  "description": "Web app used to keep track of warframe prime items.",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server",
+    "start": "node server"
+  },
+  "author": "Steven Medina",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.14",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
