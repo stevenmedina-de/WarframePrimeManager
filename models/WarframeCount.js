@@ -6,6 +6,10 @@ const WarframeCountSchema = new Schema({
         type: String,
         required: true
     },
+    warframe: {
+        type: String,
+        required: true
+    },
     helmet: {
         type: Number
     },

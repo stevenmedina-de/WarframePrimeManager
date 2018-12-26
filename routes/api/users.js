@@ -1,7 +1,6 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const passport = require('passport');
 
 const Router = express.Router();
 
@@ -11,13 +10,6 @@ const secret = require('../../config/keys').secretOrKey;
 
 const validateRegisterInput = require('../../validation/register');
 const validateLoginInput = require('../../validation/login');
-
-// @route  GET /api/users/test
-// @desc   Test route
-// @access Public
-Router.get('/test', (req, res) => {
-    res.send("Test works");
-});
 
 // @route   POST /api/users/register
 // @desc    Allows user registration
