@@ -22,7 +22,6 @@ Router.get('/', passport.authenticate('jwt', { session: false }), (req, res) => 
 // @route   POST /api/transactions/
 // @desc    Creates new transaction in log and updates count db
 // @access  Private
-// TODO: test logic in route
 Router.post('/', passport.authenticate('jwt', { session: false }), (req, res) => {
     const { errors, isValid } = validateTransactionInput(req.body);
 
