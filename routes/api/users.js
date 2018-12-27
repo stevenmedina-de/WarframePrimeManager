@@ -47,6 +47,18 @@ Router.post('/register', (req, res) => {
         });
 });
 
+// @route   PUT /api/users/updatePlat
+// @desc    Updates current plat count
+// @access  Private
+/*Router.put('/updatePlat', passport.authenticate('jwt', { session: false }), (req, res) => {
+    User.findOne({ name: req.user.name })
+        .then(user => {
+            user.platinum = req.body.platinum;
+            user.save()
+                .then(updatedPlat => res.json(updatedPlat.platinum));
+        });
+});*/
+
 // @route   POST /api/users/login
 // @desc    Logins in user
 // @access  Public

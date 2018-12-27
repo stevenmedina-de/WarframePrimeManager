@@ -3,13 +3,18 @@ const Schema = mongoose.Schema;
 
 const TransactionSchema = new Schema({
     name: {
-        type: String
+        type: String,
+        required: true
     },
-    item: {
-        type: String
+    items: {
+        type: [String]
     },
     price: {
         type: Number
+    },
+    sale: {
+        type: String,
+        enum: ['WTB', 'WTS']
     },
     date: {
         type: Date,
